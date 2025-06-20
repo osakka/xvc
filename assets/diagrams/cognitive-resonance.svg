@@ -1,0 +1,137 @@
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cognitive Resonance Diagram -->
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="humanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="resonanceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.5" />
+      <stop offset="50%" style="stop-color:#10B981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:0.5" />
+    </linearGradient>
+    
+    <!-- Pulse animation -->
+    <animate id="pulse" attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+  </defs>
+  
+  <!-- Title -->
+  <text x="400" y="30" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    Cognitive Resonance in xVC
+  </text>
+  
+  <!-- Human Side -->
+  <g id="human-side">
+    <circle cx="200" cy="200" r="80" fill="url(#humanGradient)" opacity="0.9"/>
+    <text x="200" y="205" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      Human
+    </text>
+    <text x="200" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">
+      Vision
+    </text>
+    
+    <!-- Human mental model elements -->
+    <circle cx="160" cy="170" r="5" fill="white" opacity="0.8">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="170" r="5" fill="white" opacity="0.8">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <circle cx="200" cy="150" r="5" fill="white" opacity="0.8">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- AI Side -->
+  <g id="ai-side">
+    <circle cx="600" cy="200" r="80" fill="url(#aiGradient)" opacity="0.9"/>
+    <text x="600" y="205" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">
+      AI
+    </text>
+    <text x="600" y="225" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white">
+      Capability
+    </text>
+    
+    <!-- AI pattern elements -->
+    <rect x="570" y="170" width="10" height="10" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="590" y="170" width="10" height="10" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </rect>
+    <rect x="610" y="170" width="10" height="10" fill="white" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+  </g>
+  
+  <!-- Resonance Zone -->
+  <g id="resonance-zone">
+    <!-- Overlapping area -->
+    <ellipse cx="400" cy="200" rx="120" ry="80" fill="url(#resonanceGradient)" opacity="0.6"/>
+    
+    <!-- Resonance waves -->
+    <ellipse cx="400" cy="200" rx="140" ry="90" fill="none" stroke="#10B981" stroke-width="1" opacity="0.4">
+      <animate attributeName="rx" values="140;160;140" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="ry" values="90;110;90" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.1;0.4" dur="3s" repeatCount="indefinite"/>
+    </ellipse>
+    
+    <ellipse cx="400" cy="200" rx="160" ry="100" fill="none" stroke="#10B981" stroke-width="1" opacity="0.3">
+      <animate attributeName="rx" values="160;180;160" dur="3s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="ry" values="100;120;100" dur="3s" repeatCount="indefinite" begin="1s"/>
+      <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite" begin="1s"/>
+    </ellipse>
+    
+    <text x="400" y="200" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+      Cognitive
+    </text>
+    <text x="400" y="220" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+      Resonance
+    </text>
+  </g>
+  
+  <!-- Connection flows -->
+  <g id="flows">
+    <!-- Human to Resonance -->
+    <path d="M 280 200 Q 340 180 360 200" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 280 200 Q 340 220 360 200" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+    
+    <!-- AI to Resonance -->
+    <path d="M 520 200 Q 460 180 440 200" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 520 200 Q 460 220 440 200" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.6">
+      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </path>
+  </g>
+  
+  <!-- Benefits labels -->
+  <g id="benefits" font-family="Arial, sans-serif" font-size="14" fill="#4B5563">
+    <!-- Human benefits -->
+    <text x="200" y="300" text-anchor="middle">10x Velocity</text>
+    <text x="200" y="320" text-anchor="middle">Mental Load Transfer</text>
+    <text x="200" y="340" text-anchor="middle">Quality Ratchet</text>
+    
+    <!-- Resonance benefits -->
+    <text x="400" y="300" text-anchor="middle" font-weight="bold" fill="#047857">Amplified Capability</text>
+    <text x="400" y="320" text-anchor="middle" font-weight="bold" fill="#047857">Shared Mental Models</text>
+    <text x="400" y="340" text-anchor="middle" font-weight="bold" fill="#047857">Emergent Excellence</text>
+    
+    <!-- AI benefits -->
+    <text x="600" y="300" text-anchor="middle">Clear Context</text>
+    <text x="600" y="320" text-anchor="middle">Consistent Patterns</text>
+    <text x="600" y="340" text-anchor="middle">Progressive Learning</text>
+  </g>
+</svg>

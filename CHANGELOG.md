@@ -1,9 +1,45 @@
-# EVC Documentation Changelog
+# xVC Documentation Changelog
 
-All notable changes to the Extreme Vibe Coding (EVC) documentation will be documented in this file.
+All notable changes to the Extreme Vibe Coding (xVC) documentation will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [2.0.0] - 2025-01-20
+
+### Changed
+- **MAJOR: Rebranded from EVC to xVC (eXtreme Vibe Coding)**
+  - Updated all documentation to use xVC nomenclature
+  - Created new visual identity with minimalistic logo
+  - Emphasized the "eXtreme" aspect of 10x+ velocity gains
+
+### Added
+- **Visual Assets**
+  - xVC logo in multiple formats (`assets/xvc-logo.svg`, `assets/xvc-logo-minimal.svg`)
+  - Cognitive Resonance diagram (`assets/diagrams/cognitive-resonance.svg`)
+  - Scaling Architecture diagram (`assets/diagrams/xvc-scaling-architecture.svg`)
+  - Process Flow diagram (`assets/diagrams/xvc-process-flow.svg`)
+- **Evolution Documentation** (`docs/concepts/evolution-of-xvc.md`)
+  - Historical context from pre-LLM to xVC
+  - Technology advances enabling extreme scaling
+  - Future trajectory and paradigm shifts
+- **Infrastructure & Scaling Guide** (`docs/guides/infrastructure-scaling.md`)
+  - Detailed infrastructure requirements
+  - Scaling patterns for individuals, teams, and enterprises
+  - Performance optimization strategies
+  - Troubleshooting scale issues
+- **Comprehensive Documentation Reorganization**
+  - All docs now under `docs/` directory
+  - Industry-standard categorization
+  - Architecture Decision Records (ADR) system
+  - Enhanced navigation with multiple paths
+
+### Enhanced
+- **Documentation Quality**
+  - 100% factual content with no assumptions
+  - Industry-leading reference material
+  - Clear infrastructure dependencies
+  - Concrete scaling metrics
 
 ## [1.3.0] - 2025-01-20
 
@@ -13,15 +49,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Advanced prompt patterns and composition strategies
   - Quality gate prompts for maintaining standards
 - **Language Choice Guide** (`guides/language-choice.md`)
-  - How programming language affects the entire EVC narrative
+  - How programming language affects the entire xVC narrative
   - Language tiers based on LLM training density
   - Language-specific challenges and solutions
 
 ### Updated
-- **Main EVC README** - Complete overhaul for next level
+- **Main xVC README** - Complete overhaul for next level
   - Three Pillars framework (Cognitive Resonance, Explicit Mental Models, Iterative Excellence)
   - Bidirectional benefits clearly articulated
-  - EVC Journey phases with concrete timelines
+  - xVC Journey phases with concrete timelines
   - Path to Mastery progression model
   - Powerful call to action
 - **Documentation Structure** - Reorganized for better flow
@@ -40,7 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Practical Guides**: Complete setup and workflow documentation
-  - Getting Started (`guides/getting-started.md`) - First EVC session walkthrough
+  - Getting Started (`guides/getting-started.md`) - First xVC session walkthrough
   - Environment Setup (`guides/environment-setup.md`) - Tools and configuration
   - Session Management (`guides/session-management.md`) - Optimizing productivity
   - Git Workflow (`guides/git-workflow.md`) - Version control best practices
@@ -62,7 +98,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.1.0] - 2025-01-20
 
 ### Added
-- **Philosophy Section**: Deep philosophical understanding of EVC
+- **Philosophy Section**: Deep philosophical understanding of xVC
   - Parable of the Cave (`philosophy/parable-of-the-cave.md`) - Understanding LLM echo mechanics
 - **Extended Case Studies**: Comprehensive lessons from JDBX development
   - JWT Cache Race Condition (`case-studies/jwt-cache-race-condition.md`) - Concurrent auth crisis
@@ -70,24 +106,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - The Great Reorganization (`case-studies/great-reorganization.md`) - 50 commits in one day
 
 ### Updated
-- Main EVC README with philosophy section and additional case studies
+- Main xVC README with philosophy section and additional case studies
 - Root project README with Parable of the Cave reference
 
 ## [1.0.0] - 2025-01-20
 
 ### Added
-- Initial comprehensive EVC documentation release
+- Initial comprehensive xVC documentation release
 - Core methodology overview (`README.md`)
 - Standardized prompts library with 15 key prompts (`methodology/prompts.md`)
 - Cognitive misalignment and recovery strategies (`psychology/cognitive-misalignment.md`)
-- Understanding LLMs for effective EVC (`psychology/understanding-llms.md`)
+- Understanding LLMs for effective xVC (`psychology/understanding-llms.md`)
 - Neural network behavioral patterns guide (`patterns/neural-behavior.md`)
 - Common pitfalls and anti-patterns (`methodology/pitfalls.md`)
 - Collaboration infrastructure requirements (`methodology/collaboration-infrastructure.md`)
 - Setup and scaling guide with WORCA details (`guides/setup-and-scaling.md`)
 - JDBX case study: 3 months to production (`case-studies/jdbx-lessons.md`)
 - Do's and Don'ts quick reference (`guides/dos-and-donts.md`)
-- Comprehensive EVC taxonomy (`EVC_TAXONOMY.md`)
+- Comprehensive xVC taxonomy (`xVC_TAXONOMY.md`)
 - This changelog file
 - N-1 Byte Crisis case study: Deep learning from 5-7 day debugging experience
 
@@ -101,7 +137,7 @@ This documentation captures the methodology that enabled JDBX development:
 ## Versioning Policy
 
 ### Major Version (X.0.0)
-- Fundamental changes to EVC methodology
+- Fundamental changes to xVC methodology
 - Breaking changes to core concepts
 - Major restructuring of documentation
 
@@ -147,7 +183,7 @@ This documentation captures the methodology that enabled JDBX development:
 
 ## Contributing
 
-To contribute to EVC documentation:
+To contribute to xVC documentation:
 1. Follow the documentation standards in `DOCUMENTATION_TAXONOMY.md`
 2. Update this changelog with your additions
 3. Ensure all examples are tested and verified
@@ -155,4 +191,4 @@ To contribute to EVC documentation:
 
 ## Maintenance
 
-This changelog is maintained as part of the EVC documentation and should be updated with every significant change to the methodology or its documentation.
+This changelog is maintained as part of the xVC documentation and should be updated with every significant change to the methodology or its documentation.

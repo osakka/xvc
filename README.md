@@ -1,10 +1,14 @@
-# Extreme Vibe Coding (EVC)
+# Extreme Vibe Coding (xVC)
 
-> **The art and science of human-AI cognitive resonance in software development**
+<div align="center">
+  <img src="assets/xvc-logo.svg" alt="xVC Logo" width="400">
+  
+  **The art and science of human-AI cognitive resonance in software development**
+</div>
 
 ## What is Extreme Vibe Coding?
 
-Extreme Vibe Coding (EVC) is a breakthrough methodology that transforms the relationship between human developers and AI assistants from tool-use to true partnership. Through carefully crafted prompts, unwavering principles, and deliberate practice, EVC creates a "cognitive resonance" where human vision and AI capability amplify each other.
+Extreme Vibe Coding (xVC) is a breakthrough methodology that transforms the relationship between human developers and AI assistants from tool-use to true partnership. Through carefully crafted prompts, unwavering principles, and deliberate practice, xVC creates a "cognitive resonance" where human vision and AI capability amplify each other.
 
 **The Result**: What traditionally takes 12-18 months for a solo developer can be achieved in 2-3 months with higher quality, better documentation, and more maintainable code.
 
@@ -22,7 +26,11 @@ Extreme Vibe Coding (EVC) is a breakthrough methodology that transforms the rela
 - **Quality Targets**: Known standards to achieve
 - **Progressive Learning**: Each interaction builds on previous
 
-## The Three Pillars of EVC
+## The Three Pillars of xVC
+
+<div align="center">
+  <img src="assets/diagrams/cognitive-resonance.svg" alt="Cognitive Resonance Diagram" width="600">
+</div>
 
 ### 🧠 Pillar 1: Cognitive Resonance
 **Definition**: The state where human and AI mental models align and amplify each other.
@@ -59,7 +67,11 @@ Extreme Vibe Coding (EVC) is a breakthrough methodology that transforms the rela
 
 **Key Insight**: Excellence isn't a destination—it's a ratchet that only turns forward.
 
-## The EVC Journey: From Vision to Victory
+## The xVC Journey: From Vision to Victory
+
+<div align="center">
+  <img src="assets/diagrams/xvc-process-flow.svg" alt="xVC Process Flow" width="800">
+</div>
 
 ### 🌟 Phase 1: Vision Crystallization (Days 1-7)
 **Goal**: Transform vague ideas into crystal-clear mental models.
@@ -145,7 +157,7 @@ Achievements:
 - Zero memory leaks
 - Production-ready
 
-Key Learning: Even in C's "pointer hell", EVC principles prevail
+Key Learning: Even in C's "pointer hell", xVC principles prevail
 ```
 
 ### The Go Project: Feature Discipline
@@ -164,7 +176,7 @@ Victory: Surgical precision principle prevented bloat
 
 **The Pattern**: Language affects the conversation, but principles shape the outcome.
 
-## Why EVC Works
+## Why xVC Works
 
 ### 1. **Context Accumulation**
 Modern LLMs can maintain rich context across extended sessions, allowing:
@@ -187,13 +199,13 @@ Through standardized prompts, AI learns to:
 - Maintain code style automatically
 - Detect and prevent anti-patterns
 
-## Getting Started with EVC
+## Getting Started with xVC
 
-1. **Setup Your Environment** → [Environment Setup Guide](guides/environment-setup.md)
-2. **Start Your First Session** → [Getting Started Guide](guides/getting-started.md)
-3. **Learn the Principles** → [Core Principles](principles/README.md)
-4. **Master the Prompts** → [Standardized Prompts](methodology/prompts.md)
-5. **Follow Git Workflow** → [Git Workflow Guide](guides/git-workflow.md)
+1. **Setup Your Environment** → [Environment Setup Guide](docs/guides/environment-setup.md)
+2. **Start Your First Session** → [Getting Started Guide](docs/guides/getting-started.md)
+3. **Learn the Principles** → [Core Principles](docs/concepts/principles/README.md)
+4. **Master the Prompts** → [Standardized Prompts](docs/methodology/prompts.md)
+5. **Follow Git Workflow** → [Git Workflow Guide](docs/guides/git-workflow.md)
 
 ## The Path to Mastery
 
@@ -221,13 +233,13 @@ Through standardized prompts, AI learns to:
 - AI anticipates your needs
 - Minimal guidance required
 - Excellence emerges naturally
-- Teaching others EVC
+- Teaching others xVC
 ```
 
 ### 🌟 Master (Month 3+)
 **You Are**: Transcending the methodology
 ```
-- EVC becomes invisible
+- xVC becomes invisible
 - Quality is automatic
 - Innovation emerges
 - Creating new patterns
@@ -236,32 +248,32 @@ Through standardized prompts, AI learns to:
 ## Essential Resources
 
 ### 📚 Core Documentation
-- **[Principles](principles/)** - The physics of your code universe
-- **[Prompt Library](reference/prompt-library.md)** - Battle-tested prompts ⭐ NEW
-- **[Methodology](methodology/)** - Core concepts and practices
-- **[Philosophy](philosophy/)** - Deep understanding of human-AI collaboration
+- **[Principles](docs/concepts/principles/)** - The physics of your code universe
+- **[Prompt Library](docs/reference/prompt-library.md)** - Battle-tested prompts ⭐ NEW
+- **[Methodology](docs/methodology/)** - Core concepts and practices
+- **[Philosophy](docs/concepts/philosophy/)** - Deep understanding of human-AI collaboration
 
 ### 🚀 Getting Started Path
-1. [Environment Setup](guides/environment-setup.md) - Configure your workspace
-2. [Language Choice](guides/language-choice.md) - Pick the right language
-3. [Getting Started](guides/getting-started.md) - Your first session
-4. [Session Management](guides/session-management.md) - Optimize productivity
-5. [Git Workflow](guides/git-workflow.md) - Version control mastery
+1. [Environment Setup](docs/guides/environment-setup.md) - Configure your workspace
+2. [Language Choice](docs/guides/language-choice.md) - Pick the right language
+3. [Getting Started](docs/guides/getting-started.md) - Your first session
+4. [Session Management](docs/guides/session-management.md) - Optimize productivity
+5. [Git Workflow](docs/guides/git-workflow.md) - Version control mastery
 
 ### 📖 Learning from Experience
-- **[Case Studies](case-studies/)** - Real-world EVC journeys
-  - [JDBX Success](case-studies/jdbx-lessons.md) - 100k lines in 3 months
-  - [N-1 Byte Crisis](case-studies/n1-byte-crisis.md) - Learning from challenges
-  - [Memory Revolution](case-studies/memory-management-revolution.md) - Innovation through constraint
-- **[Patterns](patterns/)** - Neural network behaviors
-- **[Pitfalls](methodology/pitfalls.md)** - What to avoid
+- **[Case Studies](docs/case-studies/)** - Real-world xVC journeys
+  - [JDBX Success](docs/case-studies/jdbx-lessons.md) - 100k lines in 3 months
+  - [N-1 Byte Crisis](docs/case-studies/n1-byte-crisis.md) - Learning from challenges
+  - [Memory Revolution](docs/case-studies/memory-management-revolution.md) - Innovation through constraint
+- **[Patterns](docs/concepts/psychology/)** - Neural network behaviors
+- **[Pitfalls](docs/methodology/pitfalls.md)** - What to avoid
 
 ### 🔧 Reference Materials
-- **[EVC Taxonomy](EVC_TAXONOMY.md)** - Complete classification
-- **[Do's and Don'ts](guides/dos-and-donts.md)** - Quick reference
+- **[xVC Taxonomy](docs/reference/naming-conventions.md)** - Complete classification
+- **[Do's and Don'ts](docs/guides/dos-and-donts.md)** - Quick reference
 - **[Changelog](CHANGELOG.md)** - Documentation evolution
 
-## The EVC Difference
+## The xVC Difference
 
 ### What This Is NOT
 - ❌ **Not Copilot/Autocomplete** - This is architectural partnership
@@ -299,16 +311,16 @@ Through standardized prompts, AI learns to:
 Stop fighting with AI tools. Start partnering with AI minds. The difference is transformative.
 
 ### For Teams  
-One EVC practitioner can outpace traditional teams while maintaining higher quality.
+One xVC practitioner can outpace traditional teams while maintaining higher quality.
 
 ### For Organizations
 The competitive advantage is real. Projects that took years now take months.
 
 ## Your Next Step
 
-**Don't read about EVC. Experience it.**
+**Don't read about xVC. Experience it.**
 
-Start here → **[Your First EVC Session in 30 Minutes](guides/getting-started.md)**
+Start here → **[Your First xVC Session in 30 Minutes](docs/guides/getting-started.md)**
 
 Then join us in pushing the boundaries of what's possible when human vision meets AI capability.
 
@@ -322,4 +334,4 @@ The code you'll create will surprise you. The velocity you'll achieve will astou
 
 ---
 
-*Built with EVC: This entire methodology was developed using itself. JDBX (100k+ lines of C) stands as proof that EVC doesn't just work—it excels.*
+*Built with xVC: This entire methodology was developed using itself. JDBX (100k+ lines of C) stands as proof that xVC doesn't just work—it excels.*

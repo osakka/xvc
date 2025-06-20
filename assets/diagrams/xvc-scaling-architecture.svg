@@ -1,0 +1,206 @@
+<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- xVC Scaling Architecture Diagram -->
+  
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="infraGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#F3F4F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E5E7EB;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="coreGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="scaleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Drop shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="30" font-family="Arial, sans-serif" font-size="26" font-weight="bold" text-anchor="middle" fill="#1F2937">
+    xVC Scaling Architecture
+  </text>
+  <text x="450" y="55" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#6B7280">
+    Infrastructure Dependencies &amp; Scaling Factors
+  </text>
+  
+  <!-- Infrastructure Layer -->
+  <g id="infrastructure-layer">
+    <rect x="50" y="450" width="800" height="120" rx="10" fill="url(#infraGradient)" stroke="#D1D5DB" stroke-width="2"/>
+    <text x="450" y="480" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#374151">
+      Infrastructure Foundation
+    </text>
+    
+    <!-- Infrastructure components -->
+    <g id="infra-components">
+      <!-- Network -->
+      <rect x="80" y="500" width="150" height="50" rx="5" fill="white" stroke="#9CA3AF" filter="url(#shadow)"/>
+      <text x="155" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+        Network Bandwidth
+      </text>
+      
+      <!-- Compute -->
+      <rect x="260" y="500" width="150" height="50" rx="5" fill="white" stroke="#9CA3AF" filter="url(#shadow)"/>
+      <text x="335" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+        Compute Resources
+      </text>
+      
+      <!-- API Limits -->
+      <rect x="440" y="500" width="150" height="50" rx="5" fill="white" stroke="#9CA3AF" filter="url(#shadow)"/>
+      <text x="515" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+        API Rate Limits
+      </text>
+      
+      <!-- Storage -->
+      <rect x="620" y="500" width="150" height="50" rx="5" fill="white" stroke="#9CA3AF" filter="url(#shadow)"/>
+      <text x="695" y="530" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#374151">
+        Context Storage
+      </text>
+    </g>
+  </g>
+  
+  <!-- Service Layer -->
+  <g id="service-layer">
+    <rect x="100" y="300" width="700" height="120" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="2"/>
+    <text x="450" y="330" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#374151">
+      Supporting Services
+    </text>
+    
+    <!-- Service components -->
+    <g id="service-components">
+      <!-- LLM Service -->
+      <rect x="130" y="350" width="140" height="50" rx="5" fill="#EBF8FF" stroke="#3B82F6" stroke-width="2" filter="url(#shadow)"/>
+      <text x="200" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#1E40AF">
+        LLM API Service
+      </text>
+      
+      <!-- Tool Services -->
+      <rect x="300" y="350" width="140" height="50" rx="5" fill="#F0FDF4" stroke="#10B981" stroke-width="2" filter="url(#shadow)"/>
+      <text x="370" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#047857">
+        Tool Functions
+      </text>
+      
+      <!-- Version Control -->
+      <rect x="470" y="350" width="140" height="50" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" filter="url(#shadow)"/>
+      <text x="540" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#B45309">
+        Version Control
+      </text>
+      
+      <!-- CI/CD -->
+      <rect x="640" y="350" width="120" height="50" rx="5" fill="#FEE2E2" stroke="#EF4444" stroke-width="2" filter="url(#shadow)"/>
+      <text x="700" y="380" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="#B91C1C">
+        CI/CD Pipeline
+      </text>
+    </g>
+  </g>
+  
+  <!-- xVC Core -->
+  <g id="xvc-core">
+    <rect x="250" y="150" width="400" height="120" rx="10" fill="url(#coreGradient)" filter="url(#shadow)"/>
+    <text x="450" y="185" font-family="Arial, sans-serif" font-size="22" font-weight="bold" text-anchor="middle" fill="white">
+      xVC Core Engine
+    </text>
+    <text x="450" y="210" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white" opacity="0.9">
+      Cognitive Resonance + Tool Orchestration
+    </text>
+    <text x="450" y="235" font-family="Arial, sans-serif" font-size="14" text-anchor="middle" fill="white" opacity="0.8">
+      10x Velocity Multiplier
+    </text>
+  </g>
+  
+  <!-- Scaling Indicators -->
+  <g id="scaling-indicators">
+    <!-- Left side - Limited scaling -->
+    <g id="limited-scaling">
+      <rect x="50" y="150" width="150" height="120" rx="10" fill="#FEE2E2" stroke="#EF4444" stroke-width="2" stroke-dasharray="5,5"/>
+      <text x="125" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#B91C1C">
+        Limited Scaling
+      </text>
+      <text x="125" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#DC2626">
+        • Slow network
+      </text>
+      <text x="125" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#DC2626">
+        • API throttling
+      </text>
+      <text x="125" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#DC2626">
+        • Limited compute
+      </text>
+      <text x="125" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#DC2626">
+        • Context limits
+      </text>
+    </g>
+    
+    <!-- Right side - Optimal scaling -->
+    <g id="optimal-scaling">
+      <rect x="700" y="150" width="150" height="120" rx="10" fill="#D1FAE5" stroke="#10B981" stroke-width="2"/>
+      <text x="775" y="180" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#047857">
+        Optimal Scaling
+      </text>
+      <text x="775" y="200" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">
+        • Fast network
+      </text>
+      <text x="775" y="215" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">
+        • High API limits
+      </text>
+      <text x="775" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">
+        • Ample compute
+      </text>
+      <text x="775" y="245" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#059669">
+        • Extended context
+      </text>
+    </g>
+  </g>
+  
+  <!-- Connection arrows -->
+  <g id="connections" stroke-width="2" fill="none">
+    <!-- Infrastructure to Services -->
+    <path d="M 155 500 L 200 400" stroke="#9CA3AF" marker-end="url(#arrowhead)"/>
+    <path d="M 335 500 L 370 400" stroke="#9CA3AF" marker-end="url(#arrowhead)"/>
+    <path d="M 515 500 L 540 400" stroke="#9CA3AF" marker-end="url(#arrowhead)"/>
+    <path d="M 695 500 L 700 400" stroke="#9CA3AF" marker-end="url(#arrowhead)"/>
+    
+    <!-- Services to Core -->
+    <path d="M 200 350 L 350 270" stroke="#3B82F6" marker-end="url(#arrowhead-blue)"/>
+    <path d="M 370 350 L 420 270" stroke="#10B981" marker-end="url(#arrowhead-green)"/>
+    <path d="M 540 350 L 480 270" stroke="#F59E0B" marker-end="url(#arrowhead-yellow)"/>
+    <path d="M 700 350 L 550 270" stroke="#EF4444" marker-end="url(#arrowhead-red)"/>
+    
+    <!-- Scaling impact arrows -->
+    <path d="M 200 210 L 250 210" stroke="#EF4444" stroke-width="3" marker-end="url(#arrowhead-red)"/>
+    <path d="M 650 210 L 700 210" stroke="#10B981" stroke-width="3" marker-end="url(#arrowhead-green)"/>
+  </g>
+  
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#9CA3AF"/>
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3B82F6"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#10B981"/>
+    </marker>
+    <marker id="arrowhead-yellow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#F59E0B"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#EF4444"/>
+    </marker>
+  </defs>
+  
+  <!-- Key insights -->
+  <g id="insights" font-family="Arial, sans-serif" font-size="12" fill="#6B7280">
+    <text x="450" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#374151">
+      Key Insight: xVC scaling is directly proportional to infrastructure quality
+    </text>
+  </g>
+</svg>
