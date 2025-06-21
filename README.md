@@ -7,15 +7,13 @@
   
   <br/>
   
-  <p>
-    <a href="docs/guides/getting-started.md"><strong>🚀 Getting Started</strong></a> &nbsp;•&nbsp;
-    <a href="docs/guides/"><strong>📖 Guides</strong></a> &nbsp;•&nbsp;
-    <a href="docs/concepts/"><strong>🧠 Concepts</strong></a> &nbsp;•&nbsp;
-    <a href="docs/adr/"><strong>🏛️ Architecture</strong></a> &nbsp;•&nbsp;
-    <a href="docs/reference/"><strong>🔧 Reference</strong></a> &nbsp;•&nbsp;
-    <a href="docs/case-studies/"><strong>💡 Case Studies</strong></a> &nbsp;•&nbsp;
-    <a href="CHANGELOG.md"><strong>📝 Changelog</strong></a>
-  </p>
+  **[🚀 Getting Started](docs/guides/getting-started.md)** • 
+  **[📖 Guides](docs/guides/)** • 
+  **[🧠 Concepts](docs/concepts/)** • 
+  **[🏛️ Architecture](docs/adr/)** • 
+  **[🔧 Reference](docs/reference/)** • 
+  **[💡 Case Studies](docs/case-studies/)** • 
+  **[📝 Changelog](CHANGELOG.md)**
 </div>
 
 ---
