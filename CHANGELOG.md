@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **Visual Assets**
-  - xVC logo in multiple formats (`assets/xvc-logo.svg`, `assets/xvc-logo-minimal.svg`)
+  - xVC logo in multiple formats (`assets/logos/xvc-logo.svg`, `assets/logos/xvc-logo-minimal.svg`)
   - Cognitive Resonance diagram (`docs/diagrams/cognitive-resonance.svg`)
   - Scaling Architecture diagram (`docs/diagrams/xvc-scaling-architecture.svg`)
   - Process Flow diagram (`docs/diagrams/xvc-process-flow.svg`)

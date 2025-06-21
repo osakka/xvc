@@ -161,11 +161,11 @@ Important architectural and methodology decisions.
 
 ## 🔧 Contributing
 
-See [Contributing Guidelines](../CONTRIBUTING.md) for how to improve this documentation.
-
-## 📝 Documentation Standards
-
-All documentation follows the standards defined in [Documentation Taxonomy](../DOCUMENTATION_TAXONOMY.md).
+To contribute to xVC documentation, please:
+1. Follow the existing documentation structure
+2. Use clear, concise language
+3. Add examples where appropriate
+4. Update the relevant README files
 
 ## 🚀 What's New
 
