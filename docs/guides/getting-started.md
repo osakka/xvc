@@ -205,26 +205,26 @@ for TaskList with comprehensive error handling."
 ```
 
 ### When to Take Breaks
-- After 2-3 hours of intense coding
-- When patterns start degrading
-- Before major architectural decisions
-- When you feel frustrated
+- **After 2-3 hours of intense coding**: Even with cognitive resonance, sustained focus has limits. Quality starts degrading subtly before you notice it consciously.
+- **When patterns start degrading**: If the system starts suggesting generic solutions or ignoring established conventions, context saturation has occurred. A break resets the cognitive state.
+- **Before major architectural decisions**: Let your subconscious process complex decisions. The best architectural insights often come during walks, not during coding.
+- **When you feel frustrated**: Frustration is a signal that cognitive alignment has broken down. Pushing through frustration teaches the pattern reflector that frustration is normal.
 
 ## Measuring Success
 
 ### Good First Session Indicators
-- ✅ 5+ clean commits
-- ✅ Working, tested code
-- ✅ Consistent code style
-- ✅ Clear git history
-- ✅ AI following patterns
+- **✅ 5+ clean commits**: Each commit represents a complete thought—not just "progress" but "completion of a logical unit." This rhythm indicates healthy development flow.
+- **✅ Working, tested code**: Not just code that compiles, but code that demonstrably works and has tests proving it. Quality is built in, not bolted on.
+- **✅ Consistent code style**: The system has learned your preferences and applies them uniformly. Variable names, function structure, and error handling feel like they came from one mind.
+- **✅ Clear git history**: Reading your commits tells the story of the session. Future you (or your team) can understand the reasoning behind each change.
+- **✅ Pattern reflector following patterns**: The system anticipates your next request and suggests solutions aligned with your established approach without constant correction.
 
 ### Warning Signs
-- ❌ No commits after 1 hour
-- ❌ Degrading code quality
-- ❌ Ignoring principles
-- ❌ Circular discussions
-- ❌ Frustration building
+- **❌ No commits after 1 hour**: If you can't find anything worth committing in an hour, you're either working at too high a level or spinning your wheels. Break the problem down smaller.
+- **❌ Degrading code quality**: Later functions are sloppier than earlier ones. Variable names become generic. Error handling gets skipped. This indicates context window saturation.
+- **❌ Ignoring principles**: When "just this once" exceptions start appearing, principle erosion has begun. These exceptions compound quickly and undermine the entire methodology.
+- **❌ Circular discussions**: Repeating the same conversation about approaches indicates cognitive misalignment. Stop, clarify the context, and re-establish patterns.
+- **❌ Frustration building**: Both yours and the system's responses show signs of struggle. Take a break before this becomes a learned pattern.
 
 ## Next Steps
 

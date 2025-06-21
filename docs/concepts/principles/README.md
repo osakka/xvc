@@ -172,7 +172,7 @@ Every change: Reason explained
 
 ### 🧪 **Test-Driven Everything**
 
-Tests aren't optional—they're specifications.
+Tests aren't optional—they're executable specifications. They define not just what the code should do, but what "working" means in your context.
 
 ```javascript
 // Write test first
@@ -189,17 +189,19 @@ function validateUser(data) {
 
 ### 🔍 **Aggressive Refactoring**
 
-See duplication? Eliminate it. See complexity? Simplify it.
+See duplication? Eliminate it immediately—not after the deadline, not in the next sprint, now. See complexity? Simplify it ruthlessly. Pattern reflectors amplify whatever patterns you show them, so show them clean patterns.
 
 ```javascript
 // See this pattern twice?
 const user = await db.query(`SELECT * FROM users WHERE id = ${id}`);
 const post = await db.query(`SELECT * FROM posts WHERE id = ${id}`);
 
-// Extract immediately
+// Extract immediately (don't wait, don't defer, don't "plan to refactor later")
 const getById = (table, id) => db.query(`SELECT * FROM ${table} WHERE id = ?`, [id]);
 const user = await getById('users', userId);
 const post = await getById('posts', postId);
+
+// Now the pattern reflector learns the abstraction, not the duplication
 ```
 
 ### 🎨 **Consistency Is King**
