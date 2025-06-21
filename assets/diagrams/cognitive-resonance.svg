@@ -98,23 +98,23 @@
     </text>
   </g>
   
-  <!-- Connection flows -->
+  <!-- Connection flows - bidirectional waves -->
   <g id="flows">
-    <!-- Human to Resonance -->
-    <path d="M 280 200 Q 340 180 360 200" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.6">
-      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 280 200 Q 340 220 360 200" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.6">
-      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    <!-- Human to AI wave -->
+    <path d="M 280 200 Q 340 180, 400 200 T 520 200" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0.7" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" values="0;15" dur="1s" repeatCount="indefinite"/>
     </path>
     
-    <!-- AI to Resonance -->
-    <path d="M 520 200 Q 460 180 440 200" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.6">
-      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite"/>
+    <!-- AI to Human wave -->
+    <path d="M 520 200 Q 460 220, 400 200 T 280 200" fill="none" stroke="#3B82F6" stroke-width="3" opacity="0.7" stroke-dasharray="10,5">
+      <animate attributeName="stroke-dashoffset" values="0;-15" dur="1s" repeatCount="indefinite"/>
     </path>
-    <path d="M 520 200 Q 460 220 440 200" fill="none" stroke="#3B82F6" stroke-width="2" opacity="0.6">
-      <animate attributeName="stroke-dasharray" values="0 100;100 0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
-    </path>
+    
+    <!-- Meeting point emphasis -->
+    <circle cx="400" cy="200" r="8" fill="#10B981" opacity="0.8">
+      <animate attributeName="r" values="8;12;8" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1s" repeatCount="indefinite"/>
+    </circle>
   </g>
   
   <!-- Benefits labels -->
