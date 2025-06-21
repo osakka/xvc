@@ -7,12 +7,12 @@
   
   <br/>
   
-  [**🚀 Getting Started**](guides/getting-started.md) • 
-  [**📖 Guides**](guides/) • 
+  [**🚀 Getting Started**](docs/guides/getting-started.md) • 
+  [**📖 Guides**](docs/guides/) • 
   [**🧠 Concepts**](docs/concepts/) • 
   [**🏛️ Architecture**](docs/adr/) • 
   [**🔧 Reference**](docs/reference/) • 
-  [**💡 Case Studies**](case-studies/) • 
+  [**💡 Case Studies**](docs/case-studies/) • 
   [**📝 Changelog**](CHANGELOG.md)
 </div>
 
