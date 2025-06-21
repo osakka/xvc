@@ -174,16 +174,29 @@ Every change: Reason explained
 
 Tests aren't optional—they're executable specifications. They define not just what the code should do, but what "working" means in your context.
 
+**The Pattern Reflector Advantage**: You can now generate hundreds of test cases per hour. But beware the consistency trap—pattern reflectors will create tests that consistently match your implementation rather than challenging it.
+
+**The Adversarial Requirement**: Always prompt for tests that try to BREAK your code, not just validate it. "Write tests that attempt to exploit this function" produces better tests than "Write tests for this function."
+
 ```javascript
-// Write test first
-test('user validation', () => {
+// Write adversarial test first (not just happy path)
+test('user validation - adversarial', () => {
+    // Requirements-based tests (not implementation-derived)
     expect(validateUser({name: ''})).toBe(false);
     expect(validateUser({name: 'John'})).toBe(true);
+    
+    // Adversarial cases that try to break assumptions
+    expect(validateUser({name: null})).toBe(false);
+    expect(validateUser({name: undefined})).toBe(false);
+    expect(validateUser({name: '   '})).toBe(false);
+    expect(validateUser({name: '<script>'})).toBe(true); // Should handle but sanitize
+    expect(validateUser({})).toBe(false);
+    expect(validateUser(null)).toBe(false);
 });
 
-// Then implement
+// Then implement to satisfy ALL tests, including adversarial ones
 function validateUser(data) {
-    return Boolean(data.name);
+    return data && typeof data.name === 'string' && data.name.trim().length > 0;
 }
 ```
 

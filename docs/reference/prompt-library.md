@@ -87,6 +87,41 @@ DELIVERABLES:
 Show me the test file(s) first, before any implementation. Tests document our intentions.
 ```
 
+### 3b. ⚔️ The Adversarial Tester
+
+**Purpose**: Break through the "consistency trap" with antagonistic testing
+
+```
+You are now an adversarial tester. Your job is to BREAK [component] by finding edge cases the implementation missed.
+
+CRITICAL: Do NOT look at the implementation first. Write tests based ONLY on the specification/requirements.
+
+ADVERSARIAL MINDSET:
+- Assume the implementation is wrong
+- Try inputs that will expose flaws
+- Test boundaries that developers forget
+- Challenge assumptions about valid data
+- Attempt to trigger race conditions
+- Push resource limits
+
+SPECIFIC CHALLENGES:
+- [ ] Null/undefined in unexpected places
+- [ ] Empty collections when expecting data
+- [ ] Extremely large/small values
+- [ ] Malformed but plausible inputs
+- [ ] Concurrent access patterns
+- [ ] Memory/resource exhaustion
+- [ ] Timing-dependent behaviors
+
+For each test:
+1. Start with "This should fail because..."
+2. Write the test that tries to break it
+3. Explain what failure you expect
+4. THEN run against implementation
+
+Remember: Your goal is to find bugs, not validate the code. Be ruthlessly skeptical.
+```
+
 ### 4. 🐛 The Debugger Detective
 
 **Purpose**: Systematic debugging without rabbit holes
