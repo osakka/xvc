@@ -4,20 +4,20 @@ This directory contains the architectural documentation for the Worca/JDBX LLM r
 
 ## Structure
 
-### `/adr/` - Architecture Decision Records
-Documenting all architectural decisions with full context and rationale:
-- [ADR-001](./adr/ADR-001-document-centric-architecture.md): Document-Centric Architecture
-- [ADR-002](./adr/ADR-002-javascript-as-configuration.md): JavaScript as Configuration Language
-- [ADR-003](./adr/ADR-003-pipeline-execution-model.md): Pipeline Execution Model
-- [ADR-004](./adr/ADR-004-state-management-strategy.md): State Management Strategy
-- [ADR-005](./adr/ADR-005-multi-project-isolation.md): Multi-Project Isolation Strategy
-- [ADR-006](./adr/ADR-006-resource-allocation-strategy.md): Resource Allocation Strategy
+### Architecture Decision Records
+All ADRs are located in `/docs/adr/`:
+- [ADR-001](../docs/adr/ADR-001-document-centric-architecture.md): Document-Centric Architecture
+- [ADR-002](../docs/adr/ADR-002-javascript-as-configuration.md): JavaScript as Configuration Language
+- [ADR-003](../docs/adr/ADR-003-pipeline-execution-model.md): Pipeline Execution Model
+- [ADR-004](../docs/adr/ADR-004-state-management-strategy.md): State Management Strategy
+- [ADR-005](../docs/adr/ADR-005-multi-project-isolation.md): Multi-Project Isolation Strategy
+- [ADR-006](../docs/adr/ADR-006-resource-allocation-strategy.md): Resource Allocation Strategy
 
-### `/diagrams/` - Architecture Diagrams
-Visual representations of the system architecture:
-- [System Overview](./diagrams/system-overview.svg): High-level architecture layers
-- [Pipeline Execution Flow](./diagrams/pipeline-execution-flow.svg): How pipelines execute with checkpointing
-- [Document Model](./diagrams/document-model.svg): Document types and namespace isolation
+### Architecture Diagrams
+All diagrams are located in `/docs/diagrams/`:
+- [System Overview](../docs/diagrams/system-overview.svg): High-level architecture layers
+- [Pipeline Execution Flow](../docs/diagrams/pipeline-execution-flow.svg): How pipelines execute with checkpointing
+- [Document Model](../docs/diagrams/document-model.svg): Document types and namespace isolation
 
 ## Key Architectural Principles
 

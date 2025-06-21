@@ -1,62 +1,28 @@
-# [ADR-NNNN] Title
+# ADR Template
 
-## Status
+## ADR-000: Title
 
-[Proposed | Accepted | Rejected | Superseded by [ADR-NNNN](NNNN-title.md)]
+### Status
+[Proposed | Accepted | Deprecated | Superseded by ADR-XXX]
 
-## Context
+### Context
+What is the issue we're addressing? What forces are at play?
 
-What is the issue that we're seeing that is motivating this decision or change?
+### Decision
+What is the change we're proposing or have agreed to implement?
 
-## Decision
+### Consequences
+What becomes easier or more difficult as a result of this change?
 
-What is the change that we're proposing and/or doing?
-
-## Consequences
-
-What becomes easier or more difficult to do because of this change?
-
-### Positive Consequences
-
-- 
+#### Positive
 - 
 
-### Negative Consequences
-
-- 
+#### Negative
 - 
 
-### Neutral Consequences
-
-- 
+#### Neutral
 - 
 
-## Alternatives Considered
-
-What other options were evaluated? Why were they rejected?
-
-1. **Alternative 1**: Description
-   - Pros: 
-   - Cons: 
-   - Reason for rejection: 
-
-2. **Alternative 2**: Description
-   - Pros: 
-   - Cons: 
-   - Reason for rejection: 
-
-## References
-
+### References
 - Link to relevant documentation
-- Link to related ADRs
-- External references
-
-## Notes
-
-Any additional context, implementation notes, or migration considerations.
-
----
-
-**Date**: YYYY-MM-DD
-**Author**: Name
-**Reviewers**: Names
+- Related ADRs
