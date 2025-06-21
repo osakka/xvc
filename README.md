@@ -4,6 +4,16 @@
   <img src="assets/logos/xvc-logo-pure.svg" alt="xVC Logo" width="400">
   
   **The Art and Science of Human Intelligence Amplified Through Pattern Reflection**
+  
+  <br/>
+  
+  [**🚀 Getting Started**](guides/getting-started.md) • 
+  [**📖 Guides**](guides/) • 
+  [**🧠 Concepts**](docs/concepts/) • 
+  [**🏛️ Architecture**](docs/adr/) • 
+  [**🔧 Reference**](docs/reference/) • 
+  [**💡 Case Studies**](case-studies/) • 
+  [**📝 Changelog**](CHANGELOG.md)
 </div>
 
 ---
