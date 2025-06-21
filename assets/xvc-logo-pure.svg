@@ -1,0 +1,20 @@
+<svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- xVC Pure Typography Logo -->
+  
+  <defs>
+    <!-- Gradient -->
+    <linearGradient id="xvcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6B46C1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4338CA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- xVC text - clean, bold -->
+  <text x="100" y="48" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="900" text-anchor="middle" fill="url(#xvcGrad)">
+    xVC
+  </text>
+  
+  <!-- Optional: minimal underline accent -->
+  <rect x="50" y="56" width="100" height="3" fill="url(#xvcGrad)" opacity="0.3" rx="1.5"/>
+</svg>

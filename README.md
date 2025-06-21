@@ -1,7 +1,7 @@
 # Extreme Vibe Coding (xVC)
 
 <div align="center">
-  <img src="assets/xvc-logo.svg" alt="xVC Logo" width="400">
+  <img src="assets/xvc-logo-pure.svg" alt="xVC Logo" width="400">
   
   **The art and science of human-AI cognitive resonance in software development**
 </div>
