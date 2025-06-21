@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1400 1000" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="docGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFB300;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8F00;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold">JDBX Document Model for LLM Runtime</text>
+  
+  <!-- Core Document Structure -->
+  <g transform="translate(50, 80)">
+    <rect x="0" y="0" width="300" height="200" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Core Document Structure</text>
+    <text x="20" y="60" font-family="monospace" font-size="12">{</text>
+    <text x="30" y="80" font-family="monospace" font-size="12">"_id": "unique-identifier",</text>
+    <text x="30" y="100" font-family="monospace" font-size="12">"_type": "document-type",</text>
+    <text x="30" y="120" font-family="monospace" font-size="12">"_namespace": "project:name",</text>
+    <text x="30" y="140" font-family="monospace" font-size="12">"_version": 1,</text>
+    <text x="30" y="160" font-family="monospace" font-size="12">"_created": "2024-01-20T10:00:00Z",</text>
+    <text x="30" y="180" font-family="monospace" font-size="12">"_modified": "2024-01-20T10:00:00Z"</text>
+    <text x="20" y="200" font-family="monospace" font-size="12">}</text>
+  </g>
+  
+  <!-- Prompt Document -->
+  <g transform="translate(400, 80)">
+    <rect x="0" y="0" width="300" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Prompt Document</text>
+    <rect x="10" y="45" width="280" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "prompt:code-gen",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "prompt",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"template": "Generate {language} code",</text>
+    <text x="25" y="125" font-family="monospace" font-size="11">"variables": ["language", "task"],</text>
+    <text x="25" y="140" font-family="monospace" font-size="11">"model_preferences": {</text>
+    <text x="35" y="155" font-family="monospace" font-size="11">"temperature": 0.2,</text>
+    <text x="35" y="170" font-family="monospace" font-size="11">"max_tokens": 4000</text>
+    <text x="25" y="185" font-family="monospace" font-size="11">},</text>
+    <text x="25" y="200" font-family="monospace" font-size="11">"tags": ["codegen", "technical"]</text>
+    <text x="20" y="215" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Transformer Document -->
+  <g transform="translate(750, 80)">
+    <rect x="0" y="0" width="300" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="150" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Transformer Document</text>
+    <rect x="10" y="45" width="280" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "transformer:extract-code",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "js_transformer",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"code": "function(response) {</text>
+    <text x="35" y="125" font-family="monospace" font-size="11">const blocks = response.match(/```[\\s\\S]*?```/g);</text>
+    <text x="35" y="140" font-family="monospace" font-size="11">return blocks.map(b => b.slice(3, -3));</text>
+    <text x="25" y="155" font-family="monospace" font-size="11">}",</text>
+    <text x="25" y="170" font-family="monospace" font-size="11">"input_schema": "llm_response",</text>
+    <text x="25" y="185" font-family="monospace" font-size="11">"output_schema": "code_blocks[]",</text>
+    <text x="25" y="200" font-family="monospace" font-size="11">"sandbox": true</text>
+    <text x="20" y="215" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Pipeline Document -->
+  <g transform="translate(1100, 80)">
+    <rect x="0" y="0" width="280" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="140" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Pipeline Document</text>
+    <rect x="10" y="45" width="260" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "pipeline:feature-dev",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "pipeline",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"stages": [</text>
+    <text x="35" y="125" font-family="monospace" font-size="11">{ "type": "context_gather" },</text>
+    <text x="35" y="140" font-family="monospace" font-size="11">{ "type": "prompt_build" },</text>
+    <text x="35" y="155" font-family="monospace" font-size="11">{ "type": "llm_invoke" },</text>
+    <text x="35" y="170" font-family="monospace" font-size="11">{ "type": "extract_code" },</text>
+    <text x="35" y="185" font-family="monospace" font-size="11">{ "type": "validate" }</text>
+    <text x="25" y="200" font-family="monospace" font-size="11">]</text>
+    <text x="20" y="215" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Session Document -->
+  <g transform="translate(50, 360)">
+    <rect x="0" y="0" width="350" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="175" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Session Document</text>
+    <rect x="10" y="45" width="330" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "session:webapp-2024-01-20",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "llm_session",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"project_id": "project:webapp",</text>
+    <text x="25" y="125" font-family="monospace" font-size="11">"state": {</text>
+    <text x="35" y="140" font-family="monospace" font-size="11">"context_tokens": 15432,</text>
+    <text x="35" y="155" font-family="monospace" font-size="11">"messages": [...],</text>
+    <text x="35" y="170" font-family="monospace" font-size="11">"current_stage": "code_generation"</text>
+    <text x="25" y="185" font-family="monospace" font-size="11">},</text>
+    <text x="25" y="200" font-family="monospace" font-size="11">"checkpoints": ["cp:1", "cp:2", "cp:3"]</text>
+    <text x="20" y="215" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Pattern Document -->
+  <g transform="translate(450, 360)">
+    <rect x="0" y="0" width="350" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="175" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Pattern Document</text>
+    <rect x="10" y="45" width="330" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "pattern:error-handling-try-catch",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "code_pattern",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"language": "javascript",</text>
+    <text x="25" y="125" font-family="monospace" font-size="11">"trigger_context": "error handling needed",</text>
+    <text x="25" y="140" font-family="monospace" font-size="11">"solution": {</text>
+    <text x="35" y="155" font-family="monospace" font-size="11">"template": "try { $1 } catch(e) { $2 }",</text>
+    <text x="35" y="170" font-family="monospace" font-size="11">"variables": ["code", "handler"]</text>
+    <text x="25" y="185" font-family="monospace" font-size="11">},</text>
+    <text x="25" y="200" font-family="monospace" font-size="11">"success_rate": 0.94</text>
+    <text x="20" y="215" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Integration Document -->
+  <g transform="translate(850, 360)">
+    <rect x="0" y="0" width="350" height="250" fill="url(#docGrad)" stroke="#E65100" stroke-width="2" rx="10" filter="url(#shadow)"/>
+    <text x="175" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Integration Document</text>
+    <rect x="10" y="45" width="330" height="195" fill="white" rx="5"/>
+    <text x="20" y="65" font-family="monospace" font-size="11">{</text>
+    <text x="25" y="80" font-family="monospace" font-size="11">"_id": "integration:claude-api",</text>
+    <text x="25" y="95" font-family="monospace" font-size="11">"_type": "llm_integration",</text>
+    <text x="25" y="110" font-family="monospace" font-size="11">"provider": "anthropic",</text>
+    <text x="25" y="125" font-family="monospace" font-size="11">"endpoint": "https://api.anthropic.com/v1",</text>
+    <text x="25" y="140" font-family="monospace" font-size="11">"auth": { "type": "bearer", "key_ref": "..." },</text>
+    <text x="25" y="155" font-family="monospace" font-size="11">"models": ["claude-3-opus", "claude-3-sonnet"],</text>
+    <text x="25" y="170" font-family="monospace" font-size="11">"rate_limits": { "rpm": 50, "tpm": 100000 },</text>
+    <text x="25" y="185" font-family="monospace" font-size="11">"retry_policy": { "attempts": 3, "backoff": "exp" }</text>
+    <text x="20" y="200" font-family="monospace" font-size="11">}</text>
+  </g>
+  
+  <!-- Namespace Isolation -->
+  <g transform="translate(50, 640)">
+    <rect x="0" y="0" width="1300" height="320" fill="#F5F5F5" stroke="#999" stroke-width="2" rx="10"/>
+    <text x="650" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Namespace Isolation</text>
+    
+    <!-- Project A Namespace -->
+    <g transform="translate(50, 60)">
+      <rect x="0" y="0" width="380" height="230" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2" rx="10"/>
+      <text x="190" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Project A Namespace</text>
+      <rect x="20" y="40" width="340" height="40" fill="#81C784" rx="5"/>
+      <text x="190" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:webapp:prompt:*</text>
+      <rect x="20" y="90" width="340" height="40" fill="#81C784" rx="5"/>
+      <text x="190" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:webapp:transformer:*</text>
+      <rect x="20" y="140" width="340" height="40" fill="#81C784" rx="5"/>
+      <text x="190" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:webapp:session:*</text>
+      <rect x="20" y="190" width="340" height="40" fill="#81C784" rx="5"/>
+      <text x="190" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:webapp:pattern:*</text>
+    </g>
+    
+    <!-- Project B Namespace -->
+    <g transform="translate(460, 60)">
+      <rect x="0" y="0" width="380" height="230" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" rx="10"/>
+      <text x="190" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Project B Namespace</text>
+      <rect x="20" y="40" width="340" height="40" fill="#64B5F6" rx="5"/>
+      <text x="190" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:api-service:prompt:*</text>
+      <rect x="20" y="90" width="340" height="40" fill="#64B5F6" rx="5"/>
+      <text x="190" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:api-service:transformer:*</text>
+      <rect x="20" y="140" width="340" height="40" fill="#64B5F6" rx="5"/>
+      <text x="190" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:api-service:session:*</text>
+      <rect x="20" y="190" width="340" height="40" fill="#64B5F6" rx="5"/>
+      <text x="190" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">project:api-service:pattern:*</text>
+    </g>
+    
+    <!-- Shared Resources -->
+    <g transform="translate(870, 60)">
+      <rect x="0" y="0" width="380" height="230" fill="#FFF3E0" stroke="#FF9800" stroke-width="2" rx="10"/>
+      <text x="190" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Shared Resources (Read-Only)</text>
+      <rect x="20" y="40" width="340" height="40" fill="#FFB74D" rx="5"/>
+      <text x="190" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">global:pattern:*</text>
+      <rect x="20" y="90" width="340" height="40" fill="#FFB74D" rx="5"/>
+      <text x="190" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">global:integration:*</text>
+      <rect x="20" y="140" width="340" height="40" fill="#FFB74D" rx="5"/>
+      <text x="190" y="165" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">global:transformer:common:*</text>
+      <rect x="20" y="190" width="340" height="40" fill="#FFB74D" rx="5"/>
+      <text x="190" y="215" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">global:prompt:templates:*</text>
+    </g>
+  </g>
+</svg>

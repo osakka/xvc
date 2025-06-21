@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="checkpointGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="errorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F44336;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D32F2F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Title -->
+  <text x="700" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Pipeline Execution Flow</text>
+  
+  <!-- Pipeline Start -->
+  <circle cx="100" cy="150" r="40" fill="#4CAF50"/>
+  <text x="100" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">START</text>
+  
+  <!-- Stage 1: Context Building -->
+  <g transform="translate(200, 100)">
+    <rect x="0" y="0" width="200" height="100" fill="url(#stageGrad)" rx="10"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Stage 1</text>
+    <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Context Building</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">transformer:context-builder</text>
+  </g>
+  
+  <!-- Checkpoint 1 -->
+  <g transform="translate(250, 250)">
+    <rect x="0" y="0" width="100" height="60" fill="url(#checkpointGrad)" rx="5"/>
+    <text x="50" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Checkpoint</text>
+    <text x="50" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">State saved</text>
+  </g>
+  
+  <!-- Stage 2: Prompt Assembly -->
+  <g transform="translate(450, 100)">
+    <rect x="0" y="0" width="200" height="100" fill="url(#stageGrad)" rx="10"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Stage 2</text>
+    <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Prompt Assembly</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">transformer:prompt-assembler</text>
+  </g>
+  
+  <!-- Checkpoint 2 -->
+  <g transform="translate(500, 250)">
+    <rect x="0" y="0" width="100" height="60" fill="url(#checkpointGrad)" rx="5"/>
+    <text x="50" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Checkpoint</text>
+    <text x="50" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">State saved</text>
+  </g>
+  
+  <!-- Stage 3: LLM Invocation -->
+  <g transform="translate(700, 100)">
+    <rect x="0" y="0" width="200" height="100" fill="url(#stageGrad)" rx="10"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Stage 3</text>
+    <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">LLM Invocation</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">integration:claude-api</text>
+  </g>
+  
+  <!-- Checkpoint 3 -->
+  <g transform="translate(750, 250)">
+    <rect x="0" y="0" width="100" height="60" fill="url(#checkpointGrad)" rx="5"/>
+    <text x="50" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Checkpoint</text>
+    <text x="50" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">State saved</text>
+  </g>
+  
+  <!-- Stage 4: Response Processing -->
+  <g transform="translate(950, 100)">
+    <rect x="0" y="0" width="200" height="100" fill="url(#stageGrad)" rx="10"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="white" font-weight="bold">Stage 4</text>
+    <text x="100" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Response Processing</text>
+    <text x="100" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">transformer:code-extractor</text>
+  </g>
+  
+  <!-- Pipeline End -->
+  <circle cx="1300" cy="150" r="40" fill="#4CAF50"/>
+  <text x="1300" y="157" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">END</text>
+  
+  <!-- Flow arrows -->
+  <path d="M 140 150 L 200 150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 400 150 L 450 150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 650 150 L 700 150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 900 150 L 950 150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 1150 150 L 1260 150" stroke="#333" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Checkpoint arrows -->
+  <path d="M 300 200 L 300 250" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 550 200 L 550 250" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M 800 200 L 800 250" stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Error Handling Flow -->
+  <g transform="translate(400, 400)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Error Handling & Recovery</text>
+  </g>
+  
+  <!-- Error at Stage 3 -->
+  <g transform="translate(700, 450)">
+    <rect x="0" y="0" width="200" height="80" fill="url(#errorGrad)" rx="10"/>
+    <text x="100" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Error at Stage 3</text>
+    <text x="100" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">LLM timeout/failure</text>
+  </g>
+  
+  <!-- Recovery Process -->
+  <g transform="translate(500, 600)">
+    <rect x="0" y="0" width="150" height="60" fill="#FF9800" rx="5"/>
+    <text x="75" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Load Checkpoint 2</text>
+    <text x="75" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Restore state</text>
+  </g>
+  
+  <!-- Retry Stage -->
+  <g transform="translate(700, 600)">
+    <rect x="0" y="0" width="200" height="60" fill="#2196F3" rx="5"/>
+    <text x="100" y="25" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Retry Stage 3</text>
+    <text x="100" y="45" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">With backoff</text>
+  </g>
+  
+  <!-- Error flow arrows -->
+  <path d="M 800 530 L 800 600" stroke="#F44336" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 650 630 L 700 630" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 575 600 L 575 310 L 550 310" stroke="#FF9800" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrowhead)"/>
+  
+  <!-- State Details -->
+  <g transform="translate(100, 750)">
+    <rect x="0" y="0" width="1200" height="120" fill="#F5F5F5" stroke="#999" stroke-width="1" rx="5"/>
+    <text x="20" y="30" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Session State Example</text>
+    <text x="20" y="55" font-family="monospace" font-size="12">{"{"} "session_id": "session:project-x-2024", "context_tokens": 15432, "stage": "response_processing",</text>
+    <text x="20" y="75" font-family="monospace" font-size="12">  "messages": [...], "variables": {"{"} "project": "webapp", "language": "javascript" {"}"}, </text>
+    <text x="20" y="95" font-family="monospace" font-size="12">  "checkpoints": ["checkpoint:stage-1", "checkpoint:stage-2", "checkpoint:stage-3"] {"}"}</text>
+  </g>
+  
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#333"/>
+    </marker>
+  </defs>
+</svg>
