@@ -13,127 +13,143 @@
       <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#7B1FA2;stop-opacity:1" />
     </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
   </defs>
   
   <!-- Title -->
   <text x="600" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold">Worca/JDBX LLM Runtime Architecture</text>
   
-  <!-- Human Layer -->
+  <!-- Human Intelligence Layer -->
   <rect x="50" y="80" width="1100" height="120" fill="#E3F2FD" stroke="#1976D2" stroke-width="2" rx="10"/>
-  <text x="600" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Human Layer</text>
+  <text x="600" y="110" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Human Intelligence & Guidance Layer</text>
   
-  <!-- Developer -->
+  <!-- Reasoning Mind -->
   <rect x="100" y="120" width="200" height="60" fill="url(#blueGrad)" rx="5"/>
-  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Developer</text>
+  <text x="200" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Reasoning Mind</text>
   
-  <!-- Project Vision -->
+  <!-- Strategic Vision -->
   <rect x="350" y="120" width="200" height="60" fill="url(#blueGrad)" rx="5"/>
-  <text x="450" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Project Vision</text>
+  <text x="450" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Strategic Vision</text>
   
-  <!-- Quality Standards -->
+  <!-- Value Judgments -->
   <rect x="600" y="120" width="200" height="60" fill="url(#blueGrad)" rx="5"/>
-  <text x="700" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Quality Standards</text>
+  <text x="700" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Value Judgments</text>
   
-  <!-- Decisions -->
+  <!-- Intelligence Applied -->
   <rect x="850" y="120" width="200" height="60" fill="url(#blueGrad)" rx="5"/>
-  <text x="950" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Decisions (ADRs)</text>
+  <text x="950" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Intelligence Applied</text>
   
   <!-- Worca Orchestration Layer -->
   <rect x="50" y="220" width="1100" height="200" fill="#F3E5F5" stroke="#7B1FA2" stroke-width="2" rx="10"/>
-  <text x="600" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Worca Orchestration Layer</text>
+  <text x="600" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">Worca Pattern Orchestration Layer</text>
   
   <!-- Project Manager -->
   <rect x="100" y="270" width="180" height="120" fill="url(#purpleGrad)" rx="5"/>
-  <text x="190" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Project Manager</text>
-  <text x="190" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• State Tracking</text>
-  <text x="190" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Context Mgmt</text>
-  <text x="190" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Rotation Control</text>
+  <text x="190" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Context Manager</text>
+  <text x="190" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• State Preservation</text>
+  <text x="190" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern Context</text>
+  <text x="190" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Vision Alignment</text>
   
   <!-- Pipeline Engine -->
   <rect x="320" y="270" width="180" height="120" fill="url(#purpleGrad)" rx="5"/>
-  <text x="410" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pipeline Engine</text>
-  <text x="410" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Stage Execution</text>
-  <text x="410" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Checkpointing</text>
-  <text x="410" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Error Handling</text>
+  <text x="410" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Execution Engine</text>
+  <text x="410" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern Application</text>
+  <text x="410" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Stage Orchestration</text>
+  <text x="410" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Error Recovery</text>
   
   <!-- Resource Allocator -->
   <rect x="540" y="270" width="180" height="120" fill="url(#purpleGrad)" rx="5"/>
   <text x="630" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Resource Allocator</text>
-  <text x="630" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• LLM Pool Mgmt</text>
-  <text x="630" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Rate Limiting</text>
-  <text x="630" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Cost Control</text>
+  <text x="630" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• LLM Selection</text>
+  <text x="630" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern Matching</text>
+  <text x="630" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Cost Optimization</text>
   
   <!-- Pattern Library -->
   <rect x="760" y="270" width="180" height="120" fill="url(#purpleGrad)" rx="5"/>
   <text x="850" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Library</text>
-  <text x="850" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Learn Patterns</text>
-  <text x="850" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Match Context</text>
-  <text x="850" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Suggest Solutions</text>
+  <text x="850" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Human Patterns</text>
+  <text x="850" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Success Templates</text>
+  <text x="850" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Context Matching</text>
   
   <!-- Quality Gate -->
   <rect x="970" y="270" width="150" height="120" fill="url(#purpleGrad)" rx="5"/>
   <text x="1045" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Quality Gate</text>
-  <text x="1045" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Validation</text>
-  <text x="1045" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Testing</text>
-  <text x="1045" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Metrics</text>
+  <text x="1045" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Human Standards</text>
+  <text x="1045" y="335" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern Validation</text>
+  <text x="1045" y="355" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Vision Alignment</text>
   
   <!-- JDBX Runtime Layer -->
   <rect x="50" y="440" width="1100" height="200" fill="#E8F5E9" stroke="#388E3C" stroke-width="2" rx="10"/>
-  <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">JDBX Runtime Layer</text>
+  <text x="600" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">JDBX Document & Pattern Storage Layer</text>
   
   <!-- Document Store -->
   <rect x="100" y="490" width="200" height="120" fill="url(#greenGrad)" rx="5"/>
-  <text x="200" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Document Store</text>
-  <text x="200" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Prompts</text>
-  <text x="200" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Transformers</text>
-  <text x="200" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Configurations</text>
+  <text x="200" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Store</text>
+  <text x="200" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Human Prompts</text>
+  <text x="200" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• JS Transformers</text>
+  <text x="200" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Vision Configs</text>
   
   <!-- JS Engine -->
   <rect x="340" y="490" width="200" height="120" fill="url(#greenGrad)" rx="5"/>
-  <text x="440" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">JavaScript Engine</text>
-  <text x="440" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• QuickJS Runtime</text>
-  <text x="440" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Sandboxing</text>
-  <text x="440" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Transform Exec</text>
+  <text x="440" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Engine</text>
+  <text x="440" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern Execution</text>
+  <text x="440" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Context Transform</text>
+  <text x="440" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Vision Apply</text>
   
   <!-- Session Manager -->
   <rect x="580" y="490" width="200" height="120" fill="url(#greenGrad)" rx="5"/>
-  <text x="680" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Session Manager</text>
-  <text x="680" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• State Tracking</text>
-  <text x="680" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Checkpoints</text>
-  <text x="680" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• History</text>
+  <text x="680" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Context Keeper</text>
+  <text x="680" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Human Decisions</text>
+  <text x="680" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Vision State</text>
+  <text x="680" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Pattern History</text>
   
   <!-- Integration Hub -->
   <rect x="820" y="490" width="280" height="120" fill="url(#greenGrad)" rx="5"/>
-  <text x="960" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">LLM Integration Hub</text>
-  <text x="960" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Claude API</text>
-  <text x="960" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• OpenAI API</text>
-  <text x="960" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Local Models</text>
+  <text x="960" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Reflection Hub</text>
+  <text x="960" y="535" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Request Formation</text>
+  <text x="960" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Context Injection</text>
+  <text x="960" y="575" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">• Response Parsing</text>
   
-  <!-- External LLMs -->
+  <!-- LLM Pattern Reflection Layer -->
   <rect x="50" y="660" width="1100" height="100" fill="#FFF3E0" stroke="#F57C00" stroke-width="2" rx="10"/>
-  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">External LLM Providers</text>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="bold">LLM Pattern Reflection Layer (Pre-trained Human Worldview)</text>
   
-  <rect x="200" y="700" width="150" height="40" fill="#FF9800" rx="5"/>
-  <text x="275" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Anthropic</text>
+  <rect x="200" y="700" width="150" height="40" fill="url(#orangeGrad)" rx="5"/>
+  <text x="275" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Matcher</text>
   
-  <rect x="400" y="700" width="150" height="40" fill="#FF9800" rx="5"/>
-  <text x="475" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">OpenAI</text>
+  <rect x="400" y="700" width="150" height="40" fill="url(#orangeGrad)" rx="5"/>
+  <text x="475" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Context Reflector</text>
   
-  <rect x="600" y="700" width="150" height="40" fill="#FF9800" rx="5"/>
-  <text x="675" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Google</text>
+  <rect x="600" y="700" width="150" height="40" fill="url(#orangeGrad)" rx="5"/>
+  <text x="675" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Worldview Echo</text>
   
-  <rect x="800" y="700" width="150" height="40" fill="#FF9800" rx="5"/>
-  <text x="875" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Local/Custom</text>
+  <rect x="800" y="700" width="150" height="40" fill="url(#orangeGrad)" rx="5"/>
+  <text x="875" y="725" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="white">Pattern Completer</text>
   
   <!-- Arrows showing flow -->
-  <path d="M 600 200 L 600 220" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 600 420 L 600 440" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
-  <path d="M 600 640 L 600 660" stroke="#666" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <path d="M 600 200 L 600 220" stroke="#1976D2" stroke-width="3" marker-end="url(#arrowhead-blue)"/>
+  <path d="M 600 420 L 600 440" stroke="#7B1FA2" stroke-width="3" marker-end="url(#arrowhead-purple)"/>
+  <path d="M 600 640 L 600 660" stroke="#388E3C" stroke-width="3" marker-end="url(#arrowhead-green)"/>
   
-  <!-- Arrow marker -->
+  <!-- Arrow markers -->
   <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-      <polygon points="0 0, 10 3, 0 6" fill="#666"/>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#1976D2"/>
+    </marker>
+    <marker id="arrowhead-purple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#7B1FA2"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#388E3C"/>
     </marker>
   </defs>
+  
+  <!-- Side annotations -->
+  <text x="20" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666" transform="rotate(-90 20 140)">Intelligence</text>
+  <text x="20" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666" transform="rotate(-90 20 320)">Orchestration</text>
+  <text x="20" y="540" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666" transform="rotate(-90 20 540)">Storage</text>
+  <text x="20" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666" transform="rotate(-90 20 710)">Reflection</text>
 </svg>
