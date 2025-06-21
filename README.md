@@ -29,7 +29,7 @@ Extreme Vibe Coding (xVC) is a breakthrough methodology that transforms the rela
 ## The Three Pillars of xVC
 
 <div align="center">
-  <img src="assets/diagrams/cognitive-resonance.svg" alt="Cognitive Resonance Diagram" width="600">
+  <img src="docs/diagrams/cognitive-resonance.svg" alt="Cognitive Resonance Diagram" width="600">
 </div>
 
 ### 🧠 Pillar 1: Cognitive Resonance
@@ -70,7 +70,7 @@ Extreme Vibe Coding (xVC) is a breakthrough methodology that transforms the rela
 ## The xVC Journey: From Vision to Victory
 
 <div align="center">
-  <img src="assets/diagrams/xvc-process-flow.svg" alt="xVC Process Flow" width="800">
+  <img src="docs/diagrams/xvc-process-flow.svg" alt="xVC Process Flow" width="800">
 </div>
 
 ### 🌟 Phase 1: Vision Crystallization (Days 1-7)
