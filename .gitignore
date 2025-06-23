@@ -1,0 +1,289 @@
+# xVC Project .gitignore
+# Comprehensive ignore patterns for Extreme Vibe Coding projects
+# Following single source of truth and workspace hygiene principles
+
+# ============================================================================
+# BUILD ARTIFACTS & BINARIES
+# ============================================================================
+
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.out
+*.app
+
+# Build directories
+build/
+dist/
+target/
+bin/
+obj/
+
+# Language-specific build artifacts
+# Go
+go.work
+go.worktest_persistent_index/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Rust
+target/
+Cargo.lock
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# C/C++
+*.o
+*.a
+*.lib
+
+# ============================================================================
+# RUNTIME & TEMPORARY FILES
+# ============================================================================
+
+# Database files (unless specifically tracked)
+*.db
+*.sqlite
+*.sqlite3
+*.ebf
+*.idx
+
+# Log files
+*.log
+logs/
+var/*.log
+
+# Process & runtime files
+*.pid
+*.lock
+*.tmp
+*.temp
+.cache/
+
+# Write-ahead logs
+*.wal
+
+# Environment files (unless template)
+.env
+.env.local
+.env.*.local
+*.env
+# Exception: Keep templates
+!.env.template
+!.env.example
+
+# ============================================================================
+# DEVELOPMENT ENVIRONMENT
+# ============================================================================
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.vim/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ============================================================================
+# TESTING & COVERAGE
+# ============================================================================
+
+# Test artifacts
+*.test
+coverage.txt
+coverage.html
+.nyc_output/
+.coverage
+htmlcov/
+
+# Exception: Keep test case files
+!**/tests/cases/*.test
+!**/test/fixtures/*.test
+
+# ============================================================================
+# DOCUMENTATION GENERATION
+# ============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+site/
+.sphinx/
+
+# Exception: Keep authored documentation
+!docs/**/*.md
+!docs/**/*.svg
+!docs/**/*.png
+
+# ============================================================================
+# DEPENDENCY MANAGEMENT
+# ============================================================================
+
+# Vendor directories
+vendor/
+third_party/
+.vendor/
+
+# Package manager files (keep lock files for deterministic builds)
+# Node.js - keep package-lock.json
+# Go - keep go.sum
+# Rust - keep Cargo.lock for applications
+
+# ============================================================================
+# SECURITY & CREDENTIALS
+# ============================================================================
+
+# SSL certificates and keys
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# API keys and secrets
+secrets.json
+credentials.json
+*.secrets
+
+# Exception: Keep example/template files
+!*.example.*
+!*.template.*
+
+# ============================================================================
+# xVC SPECIFIC PATTERNS
+# ============================================================================
+
+# Workspace temporary files
+.xvc-session/
+.workspace/
+tmp/
+
+# Pattern reflection engine outputs (unless intentionally tracked)
+*.llm-output
+*.ai-generated
+.ai-cache/
+
+# Development scripts (unless part of project)
+dev-scripts/
+scratch/
+playground/
+
+# ============================================================================
+# PROJECT RUNTIME DATA
+# ============================================================================
+
+# Application data directories
+var/
+data/
+storage/
+uploads/
+
+# Exception: Keep structure documentation
+!var/README.md
+!data/README.md
+!storage/README.md
+
+# ============================================================================
+# PERFORMANCE & PROFILING
+# ============================================================================
+
+# Profiling outputs
+*.prof
+*.trace
+perf.data*
+
+# Memory dumps
+*.hprof
+core.*
+
+# ============================================================================
+# CONTAINERIZATION
+# ============================================================================
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes local files
+*.kubeconfig
+
+# ============================================================================
+# ARCHIVE & BACKUP
+# ============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files (unless intentionally tracked)
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+
+# ============================================================================
+# WORKSPACE ORGANIZATION
+# ============================================================================
+
+# Note: Following xVC principle - obsolete code goes to /trash, not .gitignore
+# The trash/ directory IS tracked to maintain development history
+# Only truly temporary/generated files should be ignored
+
+# ============================================================================
+# LANGUAGE-SPECIFIC ADDITIONS
+# ============================================================================
+
+# Add language-specific patterns as needed for your project:
+
+# JavaScript/TypeScript
+# *.map
+# .parcel-cache/
+
+# Go additional
+# go.worksum
+
+# Python additional  
+# .pytest_cache/
+# .mypy_cache/
+
+# Rust additional
+# **/*.rs.bk
+
+# ============================================================================
+# PROJECT CUSTOMIZATION
+# ============================================================================
+
+# Add project-specific ignore patterns below this line
+# Follow the principle: ignore generated/temporary files, track everything else
