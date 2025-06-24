@@ -34,6 +34,14 @@ xVC is a methodology that transforms the relationship between human intelligence
 
 **The Secret**: You stop trying to make "AI" intelligent and start using it as the most sophisticated pattern reflection engine ever built.
 
+### 🚀 Start Today, Scale Tomorrow
+
+**Radical Accessibility**: Begin xVC immediately with just an LLM subscription and git. No complex setup required.
+
+**Infinite Scalability**: When ready, scale from individual practice to team coordination to full organizational transformation.
+
+➡️ **[See how accessible xVC is and how to scale when ready](docs/guides/accessibility-and-scaling.md)**
+
 ## The Paradigm Shift
 
 <div align="center">
