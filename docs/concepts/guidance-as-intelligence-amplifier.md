@@ -69,12 +69,12 @@ Human Intent + Comprehensive Guidance Library + Project Context → Contextual B
 ## Learning from EntityDB: Master Class in Contextual Bias
 
 ### The CLAUDE.md Pattern
-EntityDB's `CLAUDE.md` serves as the **master guidance document** that establishes:
-- Core development principles
-- Architectural constraints
-- Quality standards
-- Workflow expectations
-- Decision-making frameworks
+EntityDB's `CLAUDE.md` serves as **contextual guidance for Claude Code sessions** that establishes:
+- Core development principles when using Claude Code
+- Architectural constraints and quality standards
+- Workflow expectations for LLM-assisted development
+- Decision-making frameworks specific to pattern reflection engines
+- Cognitive resonance patterns for human-LLM collaboration
 
 ### The Trash Directory Convention
 **Insight**: Never delete code—preserve in `/trash` directory.
@@ -96,15 +96,15 @@ EntityDB's `CLAUDE.md` serves as the **master guidance document** that establish
 
 ## The xVC Guidance Architecture
 
-### Layer 1: Project Constitution (CLAUDE.md)
-**Purpose**: Define the fundamental laws that govern all development.
+### Layer 1: Claude Code Context (CLAUDE.md)
+**Purpose**: Define the fundamental guidance for Claude Code sessions specifically.
 
 **Content**:
-- Project vision and principles
-- Non-negotiable technical decisions
-- Quality standards and metrics
-- Workflow requirements
-- Tool usage standards
+- Project vision and principles for LLM-assisted development
+- Non-negotiable technical decisions when using pattern reflection
+- Quality standards and metrics for human-LLM collaboration
+- Workflow requirements specific to Claude Code
+- Cognitive resonance patterns and expectations
 
 ### Layer 2: Technical Framework (docs/guidance/)
 **Purpose**: Provide detailed technical guidance for common scenarios.

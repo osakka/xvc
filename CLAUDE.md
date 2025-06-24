@@ -1,6 +1,6 @@
-# xVC Development Guidance - Master Context Document
+# xVC Development Guidance - Claude Code Context Document
 
-> **This document serves as the primary contextual bias for all development work in xVC projects. Every decision, implementation, and interaction should align with these principles.**
+> **This document serves as the primary contextual bias when using Claude Code for xVC development. When working with Claude Code, every decision, implementation, and interaction should align with these principles.**
 
 ## Project Vision & Core Identity
 
@@ -214,21 +214,27 @@ Your workspace must be immaculately organized. Chaos kills cognitive resonance.
 5. **Document changes** in appropriate places
 6. **Update guidance** if new patterns emerge
 
-## Integration with Pattern Reflection Engines
+## Claude Code Integration
 
-### Effective Prompting
-- **Provide rich context** from this guidance
-- **Reference specific principles** in prompts
-- **Use established patterns** and terminology
+### When Using Claude Code
+This document provides contextual bias specifically for Claude Code sessions. Other LLMs or development tools may require different guidance approaches.
+
+### Effective Claude Code Prompting
+- **Reference this CLAUDE.md** for context in complex tasks
+- **Apply xVC principles** to all code generation and analysis
+- **Use established patterns** and terminology from this document
 - **Expect adherence** to documented standards
 - **Guide toward bar-raising solutions**
 
-### Cognitive Resonance Maintenance
-- **Consistent terminology** across all interactions
+### Cognitive Resonance with Claude Code
+- **Consistent terminology** across all Claude Code interactions
 - **Reinforced principles** in every exchange
 - **Quality gates** applied to all outputs
 - **Continuous alignment** with project vision
 - **Systematic guidance application**
+
+### For Other Development Environments
+Teams using other LLMs, IDEs, or development approaches should adapt these principles to their specific tools while maintaining the core xVC methodology.
 
 ## Quality Metrics & Success Indicators
 
