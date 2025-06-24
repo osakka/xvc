@@ -6,7 +6,7 @@
 
 Through systematic analysis of xVC prompts, guidance, and methodology, a clear hierarchy of emphasis emerges. These are not merely preferences—they are the **non-negotiable principles** that define xVC culture and create its transformative power.
 
-## The Ten Core Emphases (In Order of Intensity)
+## The Eleven Core Emphases (In Order of Intensity)
 
 ### 1. 🔪 **Surgical Precision / Ultra Surgical Execution**
 **Most Emphasized Principle**
@@ -167,7 +167,25 @@ Through systematic analysis of xVC prompts, guidance, and methodology, a clear h
 - Write commit messages for future maintainers
 - Create comprehensive ADRs for significant decisions
 
-### 10. 🔄 **Systematic Approach**
+### 10. 🎯 **Always Solve Never Mask**
+**Root Cause Resolution**
+
+**The Critical Principle**:
+- "Always solve never mask"
+- Fix processes at their root, not their symptoms
+- LLMs enhance solutions, never compensate for problems
+- Automation amplifies excellence, never hides inefficiency
+
+**Why This Matters**: LLM-compensated inefficiency creates false agility and compounding hidden waste. True competitive advantage comes from solving problems, not automating around them.
+
+**Practical Application**:
+- Before deploying LLM automation, ask: "Are we solving or masking?"
+- Temporarily reduce automation to measure baseline process efficiency
+- Fix inefficiencies surgically at their source
+- Use LLMs to amplify efficient processes, not compensate for broken ones
+- Continuously detect and correct false agility patterns
+
+### 11. 🔄 **Systematic Approach**
 **Methodical Excellence**
 
 **Process Emphasis**:

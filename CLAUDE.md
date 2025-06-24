@@ -38,6 +38,12 @@ Pattern reflection engines (LLMs) are not intelligent—they are sophisticated m
 - Test thoroughly before integration
 - Document rationale for every significant decision
 
+### 5. Always Solve Never Mask
+- Fix processes at their root, not their symptoms
+- LLMs enhance solutions, never compensate for problems
+- Automation amplifies excellence, never hides inefficiency
+- Before deploying LLM automation, ask: "Are we solving or masking?"
+
 ## Workspace Hygiene (Critical)
 
 ### The Clean Tabletop Principle
