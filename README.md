@@ -7,12 +7,13 @@
   
   <br/>
   
+  **[🌟 Choose Your Path](docs/paths/)** • 
   **[🚀 Getting Started](docs/guides/getting-started.md)** • 
   **[📖 Guides](docs/guides/)** • 
   **[🧠 Concepts](docs/concepts/)** • 
-  **[🏛️ Architecture](docs/adr/)** • 
   **[🔧 Reference](docs/reference/)** • 
   **[💡 Case Studies](docs/case-studies/)** • 
+  **[🏛️ Architecture](docs/adr/)** • 
   **[📝 Changelog](CHANGELOG.md)**
 </div>
 
@@ -32,13 +33,23 @@ xVC is a development methodology that establishes effective patterns for human-L
 
 **Key principle**: Instead of expecting LLMs to understand context independently, you provide clear patterns and constraints that enable consistent, predictable assistance.
 
-### 🚀 Getting Started
+## Choose Your xVC Journey
 
-**Low barrier to entry**: Start using xVC with any LLM and standard development tools. No special infrastructure required.
+**Different backgrounds, same destination: mastery of human-AI collaboration that creates extraordinary results.**
 
-**Scalable approach**: Begin with individual practice, then apply to team workflows and larger organizational processes as needed.
+<div align="center">
 
-➡️ **[See how accessible xVC is and how to scale when ready](docs/guides/accessibility-and-scaling.md)**
+| 🌟 **Wonder & Discovery** | 🔧 **Practitioner's Track** | 🌟 **Understanding** | 💼 **Strategic Value** |
+|:---:|:---:|:---:|:---:|
+| *For curious minds and future builders* | *For engineers who want results now* | *For technology enthusiasts* | *For business leaders* |
+| Learn through adventure and experimentation | Skip theory, learn patterns, get 3-5x productivity | Understand the science and implications | Evaluate ROI and competitive advantage |
+| **[Begin Adventure](docs/paths/discovery/)** | **[Get Productive](docs/paths/practitioner/)** | **[Explore Science](docs/paths/understanding/)** | **[Assess Value](docs/paths/business/)** |
+
+</div>
+
+**Not sure which path?** → **[Choose Your Path Guide](docs/paths/)**
+
+**Want to experience xVC first?** → **[30-Minute First Session](docs/tutorials/first-session.md)**
 
 ## Approach Comparison
 
