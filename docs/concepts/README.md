@@ -167,6 +167,7 @@ This section contains the intellectual framework that makes xVC methodology poss
 2. Develop [Consistent Traction Principles](consistent-traction-principles.md)
 3. Explore [Guidance as Intelligence Amplifier](guidance-as-intelligence-amplifier.md)
 4. Navigate [Guard Rails](navigating-guard-rails.md)
+5. Understand [Compulsive Regressive Disorder](psychology/compulsive-regressive-disorder.md)
 
 ## The Intellectual Legacy
 
