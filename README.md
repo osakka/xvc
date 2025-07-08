@@ -9,6 +9,7 @@
   
   **[🌟 Choose Your Path](docs/paths/)** • 
   **[🚀 Getting Started](docs/guides/getting-started.md)** • 
+  **[🏗️ Projects Showcase](docs/projects/)** • 
   **[📖 Guides](docs/guides/)** • 
   **[🧠 Concepts](docs/concepts/)** • 
   **[🔧 Reference](docs/reference/)** • 
